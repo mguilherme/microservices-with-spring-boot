@@ -46,7 +46,7 @@
 
 14. While this new server is running, edit the WordController.java class.  Comment out the “String words” variable and replace it with this hard-coded version:
   ```JAVA
-    String words = “icicle,refrigerator,blizzard,snowball”;
+    String words = "icicle,refrigerator,blizzard,snowball";
   ```
 15. Start another copy of the lab-5-word-server using the “noun” profile.  Because each runs on its own port, there will be no conflict.  You will now have two noun servers presenting different lists of words.  Both will register with Eureka, and the Ribbon load balancer in the sentence server will soon learn that both exist.
 
