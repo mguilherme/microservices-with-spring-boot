@@ -17,7 +17,7 @@ public class LuckyWordController {
 
     @RequestMapping("/lucky-word")
     public String showLuckyWord() {
-        return format("The lucky word is: {}", luckyWord);
+        return format("The lucky word is: %s", luckyWord);
     }
 
 }
